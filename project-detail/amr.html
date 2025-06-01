@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Mobile Robot</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Nunito Sans', sans-serif;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+    .project-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #bac964;
+      color: #111;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn-back:hover {
+      background: #9bb94e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up" data-aos-duration="1500">
+    <h1>Autonomous Mobile Robot</h1>
+    <img src="../AMR/images/AMR2.png" alt="AMR Robot Image" class="project-img">
+  
+   <!-- Inside your AMR project HTML page -->
+<section class="project-overview-box">
+  <div class="container">
+    <h2 class="text-left">Project Overview</h2>
+    <p>
+      The Autonomous Mobile Robot (AMR) is a healthcare-focused robotic platform designed to support nurses and patients within hospital and aged care environments. Built with intelligent navigation and modular functionality, the robot aims to handle essential, repetitive tasks such as medication delivery, UV-C disinfection, and patient communication support.
+    </p>
+    <p>
+      This project focuses on reducing nurse workload and increasing operational efficiency through automation. It integrates a voice assistant for hands-free interaction, a medication payload compartment, and multiple modes including <strong>Patient Companion Mode</strong> and <strong>Sanitation Mode</strong>. The robot is being programmed with task scheduling, route optimization, and real-time obstacle avoidance using LIDAR and camera modules.
+    </p>
+  </div>
+
+    <h3 class="text-accent mt-4">Key Features</h3>
+    <ul>
+      <li>Voice-assisted command interface</li>
+      <li>UV-C disinfection lights for sanitation tasks</li>
+      <li>Scheduled medication delivery system</li>
+      <li>Real-time navigation using SLAM algorithms</li>
+      <li>Modular design optimized for narrow hospital corridors</li>
+    </ul>
+
+    <h3 class="text-accent mt-4">Technology Stack</h3>
+    <ul>
+      <li>Hardware: Custom AMR chassis, LIDAR, ultrasonic sensors, onboard computing unit</li>
+      <li>Software: ROS2, Python, OpenCV, speech recognition modules</li>
+      <li>Navigation: SLAM, path planning algorithms, dynamic obstacle avoidance</li>
+    </ul>
+
+    <h3 class="text-warning mt-4">🚧 Status: In Progress</h3>
+    <p>
+      The development is currently focused on integrating SLAM-based navigation and testing the voice command interface within a simulated hospital environment. 
+      Hardware prototyping is complete, and software modules are being tested in phases.
+    </p>
+
+    <div class="text-center mt-5">
+      <a href="../index.html" class="btn-back">← Back to Portfolio</a>
+    </div>
+  </div>
+</section>
+
+  <script src="../js/vendor/jquery.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

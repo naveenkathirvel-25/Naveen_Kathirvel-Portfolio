@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaucoma Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    .project-container {
+      max-width: 1000px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #a1ffce;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #eee;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .btn-back {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 28px;
+      background: #a1ffce;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+    }
+    .btn-back:hover {
+      background: #7dedb3;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Glaucoma Detection AI using Deep Learning</h1>
+    <p>
+      This project focuses on the early detection of glaucoma, a serious eye condition that can lead to blindness if untreated.
+      By analyzing fundus images, the system leverages a combination of classical image processing and a ResNet-50 deep learning model to automate the identification of glaucoma-related features.
+      The objective is to provide a fast, accessible, and scalable diagnostic tool suitable for clinical and telemedicine applications.
+    </p>
+
+    <h2 class="emoji">🧩 Core Features & Methodology Highlights:</h2>
+    <ul>
+      <li><strong>Image Preprocessing:</strong> Converts RGB fundus images into grayscale and applies contrast enhancement to highlight optic disc and cup boundaries.</li>
+      <li><strong>Optic Disc & Cup Segmentation:</strong> Uses fuzzy edge detection and binarization to extract key regions.</li>
+      <li><strong>CDR Calculation:</strong> Computes the Cup-to-Disc Ratio (CDR), a vital marker for glaucoma detection.</li>
+      <li><strong>Deep Learning Classification:</strong> Employs a pretrained ResNet-50 architecture fine-tuned on a labeled dataset of glaucoma and non-glaucoma images.</li>
+    </ul>
+
+    <h2 class="emoji">🧪 Functionality & Performance:</h2>
+    <ul>
+      <li>Accurately classifies fundus images into glaucoma or normal using AI.</li>
+      <li>Reduces need for manual ophthalmologist screening in early diagnosis.</li>
+      <li>Trained on Kaggle dataset, achieving reliable accuracy with minimal preprocessing.</li>
+      <li>Utilizes morphological operations for refining input before feeding it into the network.</li>
+    </ul>
+
+    <h2 class="emoji">🏥 Use Case Scenarios:</h2>
+    <ul>
+      <li><strong>Rural Clinics:</strong> Enables remote eye screening using low-cost imaging and automatic classification.</li>
+      <li><strong>Mobile Health Units:</strong> Supports early diagnosis through portable fundus cameras and embedded AI.</li>
+      <li><strong>Hospital AI Systems:</strong> Can be integrated into electronic medical systems for patient triage and follow-up.</li>
+    </ul>
+
+    <h2 class="emoji">🛠️ Project Status:</h2>
+    <p>This project is <strong>technically complete</strong> and has been tested on multiple datasets. It serves as a base prototype for deploying AI-based medical screening tools in ophthalmology.</p>
+
+</body>
+</html>
+
+   
+  <section class="gallery-section">
+  <h3 class="gallery-title">Project Gallery</h3>
+  <div class="gallery-container">
+    <img src="../galucoma/images/Picture1.jpg" alt="Gallery Image 1">
+    <img src="../galucoma/images/Picture2.jpg" alt="Gallery Image 1">
+	<img src="../galucoma/images/Picture3.jpg" alt="Gallery Image 1">
+    <img src="../galucoma/images/Picture4.jpg" alt="Gallery Image 1">
+	<img src="../galucoma/images/Picture5.jpg" alt="Gallery Image 1">
+    <!-- Add or replace images relevant to each project -->
+  </div>
+</section>
+
+	<a href="../index.html#section-portfolio" class="btn-back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>

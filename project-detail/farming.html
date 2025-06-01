@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Automated Integrated Farming</title>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #121212, #1e1e1e);
+	  color: #f0f0f0;
+
+      animation: fadeIn 0.7s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+      text-align: center;
+	  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .project-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0px 8px 24px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+      color: #f0f8e8;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+      text-align: left;
+      max-width: 850px;
+      margin: 30px auto;
+      color: #eefae5;
+    }
+
+    .gallery-section {
+      margin-top: 60px;
+    }
+
+    .gallery-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .gallery-container img {
+      width: 160px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 28px;
+      background-color: #fff;
+      color: #2d7125;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #e2ffe0;
+      color: #256c1f;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      .project-image {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Automated Integrated Farming</h1>
+    <img src="../AIFS/images/Picture3.jpg" alt="Automated Farming System" class="project-image" />
+
+    <p>The Automated Integrated Farming System (AIFS) is a fully functional smart agriculture model that integrates <strong>vertical farming</strong>, <strong>aquaponics</strong>, and <strong>black soldier fly (BSF) waste recycling</strong> into one sustainable closed-loop ecosystem. This project was designed to maximize food production efficiency while minimizing environmental impact.</p>
+
+    <ul>
+      <li>Integrated vertical and aquaculture farming for simultaneous crop and fish production.</li>
+      <li>Black Soldier Fly (BSF) unit to convert organic waste into protein-rich feed and fertilizer.</li>
+      <li>PLC-based automation for irrigation, lighting, and monitoring.</li>
+      <li>Sensor-based control: pH, humidity, temp, ammonia, lighting, and UV filtration.</li>
+      <li>ASRS and conveyor for pod movement and harvest management.</li>
+    </ul>
+
+    <p><strong>Technologies Used:</strong> <li>Siemens TIA Portal for PLC programming and system logic.</li>
+										<li>LabVIEW for sensor data simulation and analysis.</li>
+										<li>DHT11, LDR, DO sensors, ammonia sensors, UV and LED lighting systems.</li>
+										<li>UV-based filtration and oxygenation for aquaculture tanks.</li> </p>
+
+    <p><strong>Project Outcome:</strong> <li>The system successfully demonstrated sustainable farming in a closed loop.</li>
+	                                     <li>It achieved over 12% faster growth, 90% water savings, and 70% material reuse efficiency.</li>
+											<li>The working prototype was exhibited with all systems operational.</li> </p>
+
+    <section class="gallery-section">
+      <h3 class="gallery-title">Project Gallery</h3>
+      <div class="gallery-container">
+        <img src="../AIFS/images/Picture1.jpg" alt="Gallery Image 1">
+        <img src="../AIFS/images/Picture2.jpg" alt="Gallery Image 2">
+        <img src="../AIFS/images/Picture3.jpg" alt="Gallery Image 3">
+        <img src="../AIFS/images/Picture4.jpg" alt="Gallery Image 4">
+        <img src="../AIFS/images/Picture5.jpg" alt="Gallery Image 5">
+        <img src="../AIFS/images/Picture6.jpg" alt="Gallery Image 6">
+        <img src="../AIFS/images/Picture7.jpg" alt="Gallery Image 7">
+        <img src="../AIFS/images/Picture8.png" alt="Gallery Image 8">
+        <img src="../AIFS/images/Picture9.jpg" alt="Gallery Image 9">
+        <img src="../AIFS/images/Picture10.jpg" alt="Gallery Image 10">
+        <img src="../AIFS/images/Picture11.jpg" alt="Gallery Image 11">
+        <img src="../AIFS/images/Picture12.jpg" alt="Gallery Image 12">
+        <img src="../AIFS/images/Picture13.jpg" alt="Gallery Image 13">
+        <img src="../AIFS/images/Picture14.jpg" alt="Gallery Image 14">
+        <img src="../AIFS/images/Picture15.jpg" alt="Gallery Image 15">
+      </div>
+    </section>
+
+    <a href="../index.html#section-portfolio" class="btn-back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>

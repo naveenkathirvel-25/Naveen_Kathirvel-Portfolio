@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAV for Organ Transport</title>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .project-image {
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #5fe1f3;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #e0f7fa;
+      text-align: justify;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #5fe1f3;
+      color: #003a4a;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #4ccddf;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      .project-image {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../images/uav.jpg" alt="UAV Organ Transport" class="project-image" />
+    <h1>UAV for Autonomous Organ Transport</h1>
+    <p>
+      This project presents an autonomous Unmanned Aerial Vehicle (UAV) system designed specifically for the critical task of organ transport in emergency medical situations. The goal was to improve the reliability, speed, and safety of organ delivery across urban or inter-hospital environments where time is crucial.
+
+The UAV is equipped with high-precision RTK GPS and an Intel RealSense depth camera, enabling centimeter-level accurate navigation and dynamic obstacle avoidance. The flight controller is powered by PX4 firmware, allowing stable and mission-configurable autonomous flights. In addition to the hardware, a secure telemetry communication system was implemented to monitor live position, altitude, and system status from a ground control station.
+    </p>
+    <ul>
+	<p>
+	<h3 style="margin-top: 50px; text-align: center;">Key Features</h3>
+<ul style="max-width: 800px; margin: 0 auto; padding-left: 1.5rem; text-align: left; list-style-type: disc;">
+  <li>RTK GPS-enabled navigation for precise waypoint tracking</li>
+  <li>Intel RealSense camera for real-time obstacle avoidance and visual SLAM</li>
+  <li>PX4 + MAVLink integration for autonomous missions and custom flight modes</li>
+  <li>Failsafe system for emergency landing in case of GPS loss or low battery</li>
+  <li>Mission Planner used for route setup and real-time telemetry visualization</li>
+  <li>Compact payload bay for storing sealed organ transport containers</li>
+</ul>
+
+</ul>
+
+<h3 style="margin-top: 50px;">📍 Real-World Impact</h3>
+<p>
+  This project was inspired by the growing need for efficient organ transport systems.
+  Conventional methods such as ambulances are often delayed due to traffic congestion or
+  geographic constraints. UAV-based systems offer a fast, safe, and contactless alternative,
+  especially beneficial in crowded cities and during off-peak hospital hours.
+</p>
+
+   <section class="gallery-section">
+  <h3 class="gallery-title">Project Gallery</h3>
+  <div class="gallery-container">
+    <img src="../uav/images/Picture1.jpg" alt="Gallery Image 1">
+    <img src="../uav/images/Picture2.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture3.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture4.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture5.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture6.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture7.jpg" alt="Gallery Image 1">
+	<img src="../uav/images/Picture8.jpg" alt="Gallery Image 1">
+
+    <!-- Add or replace images relevant to each project -->
+
+ </div>
+</section>
+
+	<a href="../index.html#section-portfolio" class="btn-back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
